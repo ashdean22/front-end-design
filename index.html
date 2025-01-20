@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Name shown on browser tab -->
     <title>Ashton Dean</title>
-
-    <!-- Used for Search Engine Optimization -->
-    <meta charset="UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-
-    <!-- Set View Scale 1:1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Stylesheets -->
-    <link href="css/destyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to CSS Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <div id="container">
       <div id="a">
         <h1>Ashton Dean</h1>
-        <form action="">
-          <label>Pixk a color:</label>
-          <input type="color" />
-          <input type="submit" />
-        </form>
         <h2>I'm from The Bahamas!</h2>
-        <h2>Information Technology: Web and Mobile Programming</h2>
+        <p>
+          I was born and raised in the Bahamas. I live on the island of New
+          Providence.
+        </p>
+        <h2>Information Technology: Web and Mobile Programming major</h2>
+        <h2>Year: Senior.</h2>
+        <p>
+          I hope to have a career in either web design or software development.
+        </p>
         <h2>I Love Tennis</h2>
-        <h2>An idea for my website is my college experience.</h2>
-      </div>
+        <p>
+          I have been playing tennis since I was 6 years old. I curerntly play
+          on the club team at Liberty University. I'm a tennis fan, and am
+          usually up to date with the latest news. I prefer playing for fun with
+          my friends.
+        </p>
+        <h2>Website Idea: My College Experience.</h2>
+        <p>
+          This would entail all notabale moments throughout my time at Liberty
+          University. The things I've learned and what I would do differently.
+        </p>
 
-      <div id="b"></div>
+        <br />
+
+        <!-- This will open the link in another window -->
+        <a href="https://www.liberty.edu" target="_blank">Liberty University</a>
+
+        <br />
+
+        <form action="/submit" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
