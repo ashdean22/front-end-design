@@ -1,3 +1,4 @@
+
 body {
     color: #111111;
     background-color: lightblue;
@@ -11,36 +12,11 @@ body {
     }
   }
 
-#container {
-    z-index: 10;
-    margin: auto auto;
-    width: 1400px;
-    height: 1040px;
-    padding: 10px;
-
-    /* CSS Grid */
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1000px;
-    grid-template-areas:
-       "a a"
-       "b b";
-}
-
-#subscribe {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
 
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: auto auto 500px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   }
@@ -68,21 +44,9 @@ body {
   .div4 { 
     grid-area: 5 / 1 / 6 / 5;
     border: black solid;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .div4 h2, .div4 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
   }
 
 /* Add a blackk background color to the top navigation */
