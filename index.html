@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to CSS Stylesheet -->
     <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Audiowide&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="parent">
@@ -25,45 +32,30 @@
       </div>
 
       <div class="div3">
-        <h1>Welcome to Your One Stop Shop for EVERYTHING TENNIS...</h1>
+        <h1>Welcome to Your One Stop for EVERYTHING TENNIS...</h1>
       </div>
 
       <div class="div4">
-        <h2>Subscription Plans</h2>
+        <h2>Subscribe to Newsletter</h2>
 
         <br />
 
-        <input type="email" id="email-input" placeholder="Enter your email" />
-        <button id="subscribe-btn">Subscribe</button>
+        <form id="subscription_form">
+          <input type="text" id="name_text" placeholder="Enter your name" />
+          <input type="email" id="email_text" placeholder="Enter your email" />
+          <input
+            type="date"
+            id="birthdate_text"
+            placeholder="Enter your birthdate"
+          />
+          <button id="subscribe_btn" type="button">Subscribe</button>
+        </form>
 
-        <script>
-          // This function is for the subscription process
-          function subscribe() {
-            // Get the email input value from the user
-            var email = document.getElementById("email-input").value;
-
-            // This if statement checks if the email input is empty
-            if (email === "") {
-              alert("You must enter a valid email address to subscribe.");
-              return;
-            }
-
-            // Confirmation alert showing the user subscribed
-            alert("Thank you for subscribing, " + email + "!");
-
-            // Changes the button appearance after subscription
-            var button = document.getElementById("subscribe-btn");
-            button.style.backgroundColor = "green"; // Change button color to green
-            button.innerText = "Subscribed"; // Change button text after it has been clicked
-            button.disabled = true; // Disable button after user has already subscription
-          }
-
-          // Add event listener to button
-          document
-            .getElementById("subscribe-btn")
-            .addEventListener("click", subscribe); // once the subscribe button is clicked, it will activate the subscribe function.
-        </script>
+        <!-- This new div is necessary to display the personalized message on the web page instead of an alert -->
+        <div id="message"></div>
       </div>
     </div>
+    <!-- Link to the external JavaScript file -->
+    <script src="form.js"></script>
   </body>
 </html>

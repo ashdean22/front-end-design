@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to CSS Stylesheet -->
     <link href="players.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Audiowide&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="parent">
@@ -25,7 +32,23 @@
         <h1>Get to know your Favourite Tennis Superstars</h1>
       </div>
       <div class="div4">
-        <h2>Subscription Plans</h2>
+        <h2>Subscribe to Newsletter</h2>
+
+        <br />
+
+        <form id="subscription_form">
+          <input type="text" id="name_text" placeholder="Enter your name" />
+          <input type="email" id="email_text" placeholder="Enter your email" />
+          <input
+            type="date"
+            id="birthdate_text"
+            placeholder="Enter your birthdate"
+          />
+          <button id="subscribe_btn" type="button">Subscribe</button>
+        </form>
+
+        <!-- This new div is necessary to display the personalized message on the web page instead of an alert -->
+        <div id="message"></div>
       </div>
     </div>
   </body>

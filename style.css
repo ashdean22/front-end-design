@@ -11,79 +11,96 @@ body {
     }
   }
 
-#container {
-    z-index: 10;
-    margin: auto auto;
-    width: 1400px;
-    height: 1040px;
-    padding: 10px;
 
-    /* CSS Grid */
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1000px;
-    grid-template-areas:
-       "a a"
-       "b b";
-}
-
-#subscribe {
-  background-color: blue;
-  color: white;
+#subscribe_btn {
   padding: 10px;
   border: none;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #0499aa;
+  color: white;
+  border-radius: 5px;
+  font-family: "Audiowide", serif;
+  margin: 0 auto; /* Center the button */
+  
 }
 
 
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
-  .header {
-    grid-area: 1 / 1 / 2 / 5;
-    border: black solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .topnav { grid-area: 2/ 1 / 3 / 5;
-    border: black solid;
-  }
-  .div2 { 
-    grid-area: 3 / 1 / 5 / 2;
-    border: black solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .div3 { grid-area: 3 / 2 / 5 / 5;
-    border: black solid;
-  }
-  .div4 { 
-    grid-area: 5 / 1 / 6 / 5;
-    border: black solid;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
+  grid-template-rows: auto auto 500px;
+  grid-column-gap: 10px; /* Add gap between columns */
+  grid-row-gap: 10px; /* Add gap between rows */
+}
+.header {
+  grid-area: 1 / 1 / 2 / 5;
+  border: black solid;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .div4 h2, .div4 button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-  }
+  font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.topnav {
+  grid-area: 2 / 1 / 3 / 5;
+  border: black solid;
+  border-radius: 15px;
+
+  font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.div2 {
+  grid-area: 3 / 1 / 5 / 2;
+  border: black solid;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.div3 {
+  grid-area: 3 / 2 / 5 / 5;
+  border: black solid;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.div4 {
+  grid-area: 5 / 1 / 6 / 5;
+  border: black solid;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 30px;
+  font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.div4 h2, .div4 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 
 /* Add a blackk background color to the top navigation */
 .topnav {
@@ -112,4 +129,43 @@ body {
     background-color: #0499aa;
     color: black;
   }
+
+  /* VARIOUS FONTS */
+  .audiowide-regular {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .abel-regular {
+    font-family: "Abel", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  
 
