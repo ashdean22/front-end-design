@@ -127,11 +127,70 @@ body {
     color: black;
   }
 
+/* Center all forms and their content within their divs */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px; /* Add spacing between form elements */
+  margin: 0 auto; /* Center the form itself */
+  padding: 20px;
+}
 
+/* Style all buttons to match the one in div4 */
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #0499aa;
+  color: white;
+  border-radius: 5px;
+  font-family: "Audiowide", serif;
+  font-size: 16px;
+  margin: 10px auto; /* Center the button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Add hover effect for buttons */
+button:hover {
+  background-color: #037a8a;
+}
 
+/* Center all divs containing forms */
+.div4, .div5, .div6, .div7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: black solid;
+  border-radius: 15px;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  
+/* Center the bottom 3 divs within the container */
+.div5, .div6, .div7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin: 0 auto; /* Center the div itself within the container */
+  padding: 30px;
+  border: black solid;
+  border-radius: 15px;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%; /* Optional: Adjust width to make them consistent */
+}
 
 /*!LIGHTBOX THING!*/
 .row > .column {
@@ -274,11 +333,6 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-
-
 /* VARIOUS FONTS */
 .audiowide-regular {
   font-family: "Audiowide", serif;
@@ -315,10 +369,6 @@ img.hover-shadow {
   font-weight: 700;
   font-style: italic;
 }
-
-
-
-
 
 
 

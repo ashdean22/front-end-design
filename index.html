@@ -188,9 +188,50 @@
         </form>
         <div id="registration_message"></div>
       </div>
+
+      <div class="div6">
+        <h2>Select Your Favorite Court Surfaces</h2>
+        <form id="court_surface_form">
+          <label>
+            <input type="checkbox" value="Hard" class="court_surface" /> Hard
+          </label>
+          <label>
+            <input type="checkbox" value="Clay" class="court_surface" /> Clay
+          </label>
+          <label>
+            <input type="checkbox" value="Grass" class="court_surface" /> Grass
+          </label>
+          <br /><br />
+          <button id="submit_surface_btn" type="button">Submit</button>
+        </form>
+        <div id="selected_surfaces">
+          <h3>Your Selected Surfaces:</h3>
+          <ul id="surface_list"></ul>
+        </div>
+      </div>
+
+      <div class="div7">
+        <h2>Upload Your Tennis Photo</h2>
+        <form id="upload_form">
+          <label for="tennis_photo"
+            >Choose a photo of you playing tennis:</label
+          >
+          <input type="file" id="tennis_photo" accept="image/*" />
+          <br /><br />
+          <button id="upload_btn" type="button">Upload</button>
+        </form>
+        <div id="uploaded_image">
+          <h3>Your Uploaded Photo:</h3>
+          <img
+            id="display_image"
+            style="max-width: 100%; height: auto; display: none"
+          />
+        </div>
+      </div>
     </div>
     <!-- Link to the external JavaScript file -->
     <script src="proj5.js"></script>
     <script src="proj6.js"></script>
+    <script src="proj7.js"></script>
   </body>
 </html>
