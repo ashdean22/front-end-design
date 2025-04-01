@@ -192,6 +192,22 @@ button:hover {
   width: 80%; /* Optional: Adjust width to make them consistent */
 }
 
+.div8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: black solid;
+  border-radius: 15px;
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  width: 80%;
+}
+
 /*!LIGHTBOX THING!*/
 .row > .column {
   padding: 0 8px;
@@ -368,6 +384,22 @@ img.hover-shadow {
   font-family: "Tinos", serif;
   font-weight: 700;
   font-style: italic;
+}
+
+/* Style for task toggle buttons */
+#task_list button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #0499aa;
+  color: white;
+  border-radius: 5px;
+  font-family: "Audiowide", serif;
+  font-size: 14px;
+}
+
+#task_list button:hover {
+  background-color: #037a8a;
 }
 
 
