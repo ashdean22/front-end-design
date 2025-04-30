@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Abel&family=Audiowide&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- Chart.js library for creating interactive charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="parent">
@@ -30,20 +32,26 @@
         <h3>Recent Highlights</h3>
       </div>
       <div class="div3">
-        <h1>Latest ATP Rankings</h1>
-        <img src="rankings.jpg" alt="Rankings" />
-        <table id="rankingsTable">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Player</th>
-              <th>Country</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Rows will be added dynamically by JavaScript -->
-          </tbody>
-        </table>
+        <h1>Roger Federer Statistics</h1>
+        <!-- Chart container with responsive grid layout -->
+        <div class="chart-container">
+          <!-- Win/Loss ratio chart -->
+          <div class="chart-item">
+            <canvas id="winLossChart"></canvas>
+          </div>
+          <!-- Serve speed evolution chart -->
+          <div class="chart-item">
+            <canvas id="serveSpeedChart"></canvas>
+          </div>
+          <!-- Grand Slam performance chart -->
+          <div class="chart-item">
+            <canvas id="grandSlamChart"></canvas>
+          </div>
+          <!-- Head-to-head comparison chart -->
+          <div class="chart-item">
+            <canvas id="h2hChart"></canvas>
+          </div>
+        </div>
       </div>
       <div class="div4">
         <h2>Subscribe to Newsletter</h2>
@@ -65,7 +73,7 @@
         <div id="message"></div>
       </div>
     </div>
-    <!-- Link to the external JavaScript file -->
-    <script src="proj5.js"></script>
+    <!-- JavaScript file containing chart configurations -->
+    <script src="final.js"></script>
   </body>
 </html>

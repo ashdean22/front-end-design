@@ -28,10 +28,11 @@ body {
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto auto 500px;
-  grid-column-gap: 10px; /* Add gap between columns */
-  grid-row-gap: 10px; /* Add gap between rows */
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  padding: 20px;
 }
+
 .header {
   grid-area: 1 / 1 / 2 / 5;
   border: black solid;
@@ -45,15 +46,38 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-.topnav {
-  grid-area: 2 / 1 / 3 / 5;
-  border: black solid;
-  border-radius: 15px;
 
-  font-family: "Audiowide", serif;
+/* Navigation styles */
+.topnav {
+    grid-area: 2 / 1 / 3 / 5;
+    border: black solid;
+    border-radius: 15px;
+    background-color: #333;
+    overflow: hidden;
+    font-family: "Audiowide", serif;
     font-weight: 400;
     font-style: normal;
 }
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0499aa;
+  color: black;
+}
+
 .div2 {
   grid-area: 3 / 1 / 5 / 2;
   border: black solid;
@@ -98,34 +122,6 @@ body {
   text-align: center;
   flex-direction: column;
 }
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #0499aa;
-    color: black;
-  }
 
 /* Center all forms and their content within their divs */
 form {
@@ -400,6 +396,12 @@ img.hover-shadow {
 
 #task_list button:hover {
   background-color: #037a8a;
+}
+
+/* Initial state for animated elements */
+.div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 
